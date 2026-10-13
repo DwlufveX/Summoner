@@ -1,0 +1,9 @@
+Source/bin/
+Source/obj/
+Mod/Assemblies/
+Dist/
+TestRuns/
+.vs/
+.idea/
+*.user
+*.suo

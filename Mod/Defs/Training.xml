@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="RMS_TrainingBase" ParentName="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass><category>Item</category><stackLimit>10</stackLimit>
+    <graphicData><texPath>UI/Summoner/Crystal</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>0.6</drawSize></graphicData>
+    <statBases><MaxHitPoints>60</MaxHitPoints><Mass>0.1</Mass><Flammability>0.2</Flammability></statBases>
+    <comps><li Class="CompProperties_Usable"><useJob>UseItem</useJob><useLabel>为契约灵狼使用经验结晶</useLabel><useDuration>120</useDuration></li></comps>
+  </ThingDef>
+  <ThingDef ParentName="RMS_TrainingBase"><defName>RMS_TrainingCrystal</defName><label>灵兽训练结晶</label><description>召唤师使用后给同地图30格内的契约兽增加100经验，不增加羁绊。</description><statBases><MarketValue>250</MarketValue></statBases><comps><li Class="RimMod.Summoner.CompProperties_Training"><experience>100</experience></li></comps></ThingDef>
+  <ThingDef ParentName="RMS_TrainingBase"><defName>RMS_CondensedEssence</defName><label>浓缩灵质</label><description>召唤师使用后给同地图30格内的契约兽增加300经验，不增加羁绊。</description><statBases><MarketValue>650</MarketValue></statBases><comps><li Class="RimMod.Summoner.CompProperties_Training"><experience>300</experience></li></comps></ThingDef>
+</Defs>

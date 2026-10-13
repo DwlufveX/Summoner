@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>RimModSummoner</AssemblyName>
+    <Version>0.1.2</Version>
+    <OutputPath>../Mod/Assemblies/</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GameDir Condition="'$(GameDir)' == ''">D:/STEAM/steamapps/common/RimWorld/RimWorldWin64_Data/Managed</GameDir>
+    <Workshop Condition="'$(Workshop)' == ''">D:/STEAM/steamapps/workshop/content/294100</Workshop>
+    <HarmonyDll Condition="'$(HarmonyDll)' == '' and Exists('$(Workshop)/2009463077/1.6/Assemblies/0Harmony.dll')">$(Workshop)/2009463077/1.6/Assemblies/0Harmony.dll</HarmonyDll>
+    <HarmonyDll Condition="'$(HarmonyDll)' == ''">$(Workshop)/2009463077/Current/Assemblies/0Harmony.dll</HarmonyDll>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(GameDir)/Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(GameDir)/UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.IMGUIModule"><HintPath>$(GameDir)/UnityEngine.IMGUIModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="VEF"><HintPath>$(Workshop)/2023507013/1.6/Assemblies/VEF.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="VanillaPsycastsExpanded"><HintPath>$(Workshop)/2842502659/1.6/Assemblies/VanillaPsycastsExpanded.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(HarmonyDll)</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

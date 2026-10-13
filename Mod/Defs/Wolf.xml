@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ThingBaseWolf">
+    <defName>RMS_SpiritWolf</defName><label>灵狼</label>
+    <description>具有灵魂感应的真实狼。深色毛皮上流动着翠绿灵光。需要食物、睡眠和医疗；契约期间无需训练顺从，也不可繁殖、普通驯服或交易。</description>
+    <comps><li Class="RimMod.Summoner.CompProperties_SpiritWolf"/></comps>
+    <inspectorTabs><li>RimMod.Summoner.ITab_SoulContract</li></inspectorTabs>
+    <race><baseBodySize>1.0</baseBodySize><playerCanChangeMaster>false</playerCanChangeMaster></race>
+  </ThingDef>
+  <PawnKindDef ParentName="AnimalKindBaseWolf">
+    <defName>RMS_SpiritWolf</defName><label>灵狼</label><race>RMS_SpiritWolf</race>
+    <lifeStages>
+      <li><bodyGraphicData><texPath>Things/Pawn/Animal/SpiritWolf/SpiritWolf</texPath><drawSize>1.15</drawSize></bodyGraphicData></li>
+      <li><bodyGraphicData><texPath>Things/Pawn/Animal/SpiritWolf/SpiritWolf</texPath><drawSize>1.7</drawSize></bodyGraphicData></li>
+      <li><bodyGraphicData><texPath>Things/Pawn/Animal/SpiritWolf/SpiritWolf</texPath><drawSize>2.2</drawSize></bodyGraphicData></li>
+    </lifeStages>
+  </PawnKindDef>
+  <RimMod.Summoner.EvolutionDef>
+    <defName>RMS_Greatfang</defName><label>巨牙灵狼</label><requiredLevel>5</requiredLevel><requiredBond>75</requiredBond><hediff>RMS_GreatfangForm</hediff>
+  </RimMod.Summoner.EvolutionDef>
+</Defs>

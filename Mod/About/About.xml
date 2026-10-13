@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>RimMod - Summoner: Soul Wolf</name>
+  <author>RimMod</author>
+  <packageId>rimmod.summoner</packageId>
+  <supportedVersions><li>1.6</li></supportedVersions>
+  <modDependencies>
+    <li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li>
+    <li><packageId>ludeon.rimworld.royalty</packageId><displayName>Royalty</displayName></li>
+    <li><packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId><displayName>Vanilla Expanded Framework</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2023507013</steamWorkshopUrl></li>
+    <li><packageId>VanillaExpanded.VPsycastsE</packageId><displayName>Vanilla Psycasts Expanded</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2842502659</steamWorkshopUrl></li>
+  </modDependencies>
+  <loadAfter><li>brrainz.harmony</li><li>ludeon.rimworld.royalty</li><li>OskarPotocki.VanillaFactionsExpanded.Core</li><li>VanillaExpanded.VPsycastsE</li></loadAfter>
+  <description>召唤师 v0.1.2：营救被部落守卫囚禁的原创大型绿光灵狼，签约后无需顺从训练，可独立征召控制，并获得契约强化。共同成长、护主并进化；契约兽永久死亡。当前为单人测试版。</description>
+</ModMetaData>

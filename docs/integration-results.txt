@@ -1,0 +1,56 @@
+[SummonerTest] World initialized; phase=0
+[SummonerTest] PASS VPE path has exactly three skills
+[SummonerTest] PASS learning schedules delayed rescue event
+[SummonerTest] PASS delayed event creates guarded wilderness camp
+[SummonerTest] PASS adult spirit wolf is physically and visually larger than a vanilla timber wolf
+[SummonerTest] PASS repeated search keeps single entity
+[SummonerTest] PASS candidate cannot reproduce
+[SummonerTest] PASS candidate cannot receive normal taming jobs
+[SummonerTest] PASS other pawn cannot steal candidate
+[SummonerTest] PASS living tribal guards block the rescue contract
+[SummonerTest] PASS defeating guards frees the candidate
+[SummonerTest] PASS contract binds candidate
+[SummonerTest] PASS new contract has two-day weakness
+[SummonerTest] PASS contract removes snare and applies combat enhancement
+[SummonerTest] PASS contract grants direct draft control without obedience training
+[SummonerTest] PASS spirit wolf can be drafted directly
+[SummonerTest] PASS drafted spirit wolf accepts a direct move order
+[SummonerTest] PASS real animal food sleep and flesh biology
+[SummonerTest] PASS contract beast cannot trade
+[SummonerTest] PASS contract prevents accidental wildness decay
+[SummonerTest] PASS ordinary recruitment cannot replace owner
+[SummonerTest] PASS unspawned beast cannot be recalled or duplicated
+[SummonerTest] PASS recall enabled on living same-map beast
+[SummonerTest] PASS recall preserves ID hunger and wounds
+[SummonerTest] PASS cohabitation increases bond
+[SummonerTest] PASS experience item consumed without buying bond
+[SummonerTest] PASS combat experience has daily cap
+[SummonerTest] PASS level five experience clamp
+[SummonerTest] PASS XP alone cannot evolve
+[SummonerTest] PASS level and bond unlock evolution
+[SummonerTest] PASS evolution occurs once and preserves identity and injuries
+[SummonerTest] PASS evolved form is identified in animal label
+[SummonerTest] PASS enemy pawns cannot gain the summoner path
+[SummonerTest] PASS evolved pursuit orders attack and grants timed sprint
+[SummonerTest] PASS hostile damage records combat participation
+[SummonerTest] PASS soul link toggles on
+[SummonerTest] PASS link deals real share damage to wolf
+[SummonerTest] PASS soul link toggles off
+[SummonerTest] SAVE COMPLETE; loading saved contract
+[SummonerTest] World initialized; phase=1
+[SummonerTest] PASS save reload preserves entity owner level and evolution
+[SummonerTest] PASS wolf death ends contract and causes trauma
+[SummonerTest] PASS trauma lasts seven days
+[SummonerTest] PASS trauma blocks new event
+[SummonerTest] PASS dead beast cannot be recalled
+[SummonerTest] PASS removing trauma early cannot bypass seven-day recovery
+[SummonerTest] PASS recovered summoner receives another delayed rescue event
+[SummonerTest] PASS after delay event creates fresh level-one entity
+[SummonerTest] PASS replacement contract binds
+[SummonerTest] PASS actual hostile damage grants experience
+[SummonerTest] PASS hostile lethal hit grants combat and kill experience
+[SummonerTest] PASS guardian fixture has an actually downed owner
+[SummonerTest] PASS level-four wolf activates guardian buff for downed owner
+[SummonerTest] PASS owner death leaves living lost-soul beast
+[SummonerTest] PASS lost soul eventually returns wild alive
+[SummonerTest] ALL TESTS PASSED
