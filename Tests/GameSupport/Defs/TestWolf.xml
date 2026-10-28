@@ -1,0 +1,14 @@
+<Defs>
+  <ThingDef ParentName="ThingBaseWolf">
+    <defName>RMS_ArchiveTestWolf</defName><label>archive test wolf</label>
+    <comps><li Class="RimMod.Summoner.CompProperties_SummonerBeastLink" /></comps>
+  </ThingDef>
+  <PawnKindDef ParentName="AnimalKindBaseWolf">
+    <defName>RMS_ArchiveTestWolf</defName><label>archive test wolf</label><race>RMS_ArchiveTestWolf</race>
+    <lifeStages>
+      <li><bodyGraphicData><texPath>Things/Pawn/Animal/Wolf_Timber/Wolf_Timber</texPath><drawSize>1.05</drawSize></bodyGraphicData></li>
+      <li><bodyGraphicData><texPath>Things/Pawn/Animal/Wolf_Timber/Wolf_Timber</texPath><drawSize>1.5</drawSize></bodyGraphicData></li>
+      <li><bodyGraphicData><texPath>Things/Pawn/Animal/Wolf_Timber/Wolf_Timber</texPath><drawSize>1.95</drawSize></bodyGraphicData></li>
+    </lifeStages>
+  </PawnKindDef>
+</Defs>

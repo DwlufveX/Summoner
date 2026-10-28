@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework Condition="'$(RimWorldVersion)' == '1.6'">net48</TargetFramework>
+    <TargetFramework Condition="'$(RimWorldVersion)' == '1.7'">net10.0</TargetFramework>
+    <DefineConstants Condition="'$(RimWorldVersion)' == '1.7'">$(DefineConstants);RIMWORLD_1_7</DefineConstants>
+    <LangVersion>latest</LangVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Workshop Condition="'$(Workshop)' == ''">D:/STEAM/steamapps/workshop/content/294100</Workshop>
+    <HarmonyDll Condition="'$(HarmonyDll)' == '' and Exists('$(Workshop)/2009463077/$(RimWorldVersion)/Assemblies/0Harmony.dll')">$(Workshop)/2009463077/$(RimWorldVersion)/Assemblies/0Harmony.dll</HarmonyDll>
+    <HarmonyDll Condition="'$(HarmonyDll)' == ''">$(Workshop)/2009463077/Current/Assemblies/0Harmony.dll</HarmonyDll>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony"><HintPath>$(HarmonyDll)</HintPath><Private>true</Private></Reference>
+  </ItemGroup>
+</Project>

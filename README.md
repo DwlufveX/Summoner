@@ -1,68 +1,70 @@
-# 召唤师 / Summoner — 独立大型 Mod 项目
+# 召唤师 Summoner Class
 
-独立开发目录：`E:\Project\Summoner`，拥有单独 Git 仓库。2026-10-13 从 RimMod 工作区提取，作为下一个大型召唤师 Mod 的开发入口。
+大型 RimWorld Mod 独立工程，开发目录为 `E:\Project\Summoner`。后续统一按[系统设计需求 v0.10.2](docs/References/召唤师流派系统设计需求v0.10.md)推进。
 
-当前可运行基线是 **v0.1.2「灵狼契约」**：RimWorld 1.6 / Vanilla Psycasts Expanded 附属 MOD，运行包是 `Mod/`，单人测试版。大型版本的系统需求见 [设计需求 v0.10.2](docs/References/召唤师流派系统设计需求v0.10.md)（文件名保留 v0.10），实施阶段和规则差异见 [大型版本路线](docs/ROADMAP.md)。需求版本号不代表已实现的程序版本。
+和朋友一起开发时，从[协作说明](CONTRIBUTING.md)开始：克隆仓库、配置各自的游戏目录，在功能分支修改，再通过 Pull Request 合并。可复制 `.build.local.example.json` 作为本机配置。
 
-源码、XML、美术源稿与工具均在本项目中；RimWorld、Harmony、VEF、VPE 是外部安装依赖。旧目录 `E:\Project\RimMod\Summoner` 保留历史代码、发行包和测试存档，后续改动只在新目录进行。
+**当前为大型版入门流程开发版 `0.3.0-dev`。** 已接入觉醒、简版牢笼救援、德鲁伊三兽、契约编队、呼唤/召回/轮换、征召移动与基础攻击。升级三选一、突破、锁血和复活仍未实现；需求版本不代表已实现的程序版本。
 
-## 安装与游玩
+## 核心玩法
 
-1. 备份要使用的存档。将运行包文件夹 `RimModSummoner` 放入游戏的 `Mods` 目录。
-2. 加载 Harmony、Core、Royalty、Vanilla Expanded Framework、Vanilla Psycasts Expanded，然后加载本 MOD。依赖不包含在安装包中。
-3. 进入游戏，给已有灵能的小人解锁「召唤师」Path，并学习「灵魂契约」。普通小人仍需要先获得 VPE 灵能能力。
-4. 学习后先收到遥远感应；约1–2天后，地图内会出现由3–6名敌对部落成员守卫的灵狼营地。击败或驱离仍有战斗力的守卫，靠近灵狼12格施放灵魂契约。候选限三天，仅对应召唤师可签约。
-5. 签约会自动完成驯服、顺从和释放，不需要训练或维护顺从度。选中灵狼即可使用原版征召按钮，直接下达移动和攻击命令。契约立即提供移速+10%、近战伤害+15%、攻击间隔-10%、承伤-15%。
-6. 按正常动物照顾其食物、睡眠和伤病。学习后续「灵魂呼唤」「灵魂链接」。选中灵狼查看「灵魂契约」页与猎杀指令。
-7. 经验到Lv5且羁绊至少75，让双方清醒且站在12格内，点击灵狼的进化按钮。它会成为巨牙灵狼，保持同一生物和伤病。
-8. 灵狼死后主人有七天灵魂创伤；结束后自动寻找新狼。主人死亡后狼失魂一天，然后恢复野性。
+觉醒 → 救援并收集契约兽 → 安排主兽与备用兽 → 战斗和工作养成 → 升级三选一 → 消耗灵质突破 → 扩充阵容。
 
-没有候选、没有有效契约且没有创伤时，可对主人自身施放灵魂契约来重新寻找。候选消失/死亡的重试间隔为一天。呼唤只移动同地图实体，不能跨商队、跨地图或复活。
+- 契约位管理血脉编队，每槽 1 主兽与最多 3 备用兽；上场容量独立限制同时出场的战力。
+- 每只兽有四阶成长，每阶 Lv1–40；普通属性与特殊变异共享成长选择。
+- 兽升级反哺召唤师，提供熟练度与能力选择。
+- 灵魂界承担撤回、轮换和沉睡；濒死锁血退回，冷却内再次濒死则真死，可消耗灵质复活。
+- MVP 仅德鲁伊灵狼、灵熊、灵鹰，后续扩展亡灵、元素、机械、虫族与混沌影子。
 
-## 项目文件
+详细游玩逻辑、成长公式和待收口规则见[玩法与成长体系](docs/GAMEPLAY.md)。
+
+现在的试玩路径：买觉醒种子 → 殖民者吸收 → 打开附近灵兽牢笼 → 选择灵兽安排召唤师缔约 → 打开主人“契约编队” → 呼唤/召回/切换 → 征召灵兽移动与攻击。狼、熊、鹰逐步进入同一德鲁伊槽，初始只能派一只。熊、鹰暂用单视角过渡素材；完整救援任务、专属技能与成长循环继续开发。
+
+## 当前工程状态
+
+已移除旧版单狼契约、VPE 技能树、Lv1–5、羁绊进化、七天创伤与对应测试。保留可复用的原创灵狼四向贴图、美术源稿和通用占位图标，供大型版使用。
+
+支持 **RimWorld 1.6、1.7 公测版 + Harmony**。两版分别编译为 net48、net10.0，已在无 DLC 的完整游戏环境各通过两轮保存/读档，见[双版本验证](docs/COMPATIBILITY.md)。当前工程不依赖 VPE、VEF 或 Royalty，后续 DLC 血脉按需接入。原项目历史保存在 Git 初始提交及 `E:\Project\RimMod\Summoner`，当前工作区只维护大型版。
 
 | 路径 | 内容 |
 |---|---|
-| docs/Summoner_v0.1_Design.md | 范围、完整规则、数值与验收条件 |
-| docs/TEST_REPORT.md | 实际测试结果和仍需人工验证的部分 |
-| Source/Contracts.cs | 契约记录、事件、死亡与世界状态保存 |
-| Source/SpiritWolf.cs | Lv1–5、羁绊、进化、动物指挥和状态页 |
-| Source/Abilities.cs | 三个VPE技能与经验物品 |
-| Source/Patches.cs | 战斗/分摊/治疗、贸易/繁殖/驯服保护、心情 |
-| Source/SelfTest.cs | 显式启动参数启用的隔离游戏集成测试 |
-| Mod/Defs | Path、能力、生物、成长、状态和商品XML |
-| Mod/Patches/Traders.xml | 异乡商队与轨道珍奇商人经验商品 |
-| Mod/Textures | 原创绿光灵狼四向贴图、几何UI占位图标和资源来源说明 |
-| ArtSource/SpiritWolf | 图像生成得到的原创三视图源稿；安装包不需要此目录 |
-| Tools | 编译辅助、占位资源生成、隔离测试和打包 |
-| docs/References | 大型版本设计稿、历史设计及交付骨架 ZIP；不参与当前编译 |
-| docs/ROADMAP.md | 大型版本阶段与当前实现的区别 |
-| docs/MIGRATION.md | 独立迁移范围、旧目录位置和验证记录 |
+| docs/GAMEPLAY.md | 大型版游玩循环、升级、突破、轮换及待收口问题 |
+| docs/ROADMAP.md | 开发阶段、实施顺序和范围 |
+| docs/STATUS.md | 当前实现状态与验证边界 |
+| docs/COMPATIBILITY.md | 1.6 与 1.7 公测版的依赖、构建和验收范围 |
+| docs/tasks/01_DATA_FOUNDATION.md | 交给 Cursor/Grok 的第一轮数据与存档基础任务 |
+| docs/References/召唤师流派系统设计需求v0.10.md | 权威需求，正文版本 v0.10.2 |
+| docs/References/SummonerClass.zip | 大型版历史交付骨架与资源参考，不参与编译 |
+| docs/References/ | 历史需求和交付清单只供参考，不覆盖权威需求 |
+| docs/MIGRATION.md | 工程独立与大型版重建记录 |
+| Source/ | 大型版工程及 Mod 入口 |
+| Mod/ | Mod 元数据、构建程序集及可复用资源 |
+| ArtSource/SpiritWolf/ | 原创灵狼源稿与来源说明 |
+| Tools/ | 构建、检查、打包与资源重建工具 |
 
-## 构建与测试
+## 构建与检查
 
-需要 .NET SDK 和本地 RimWorld 1.6、Harmony、VEF、VPE 安装。脚本默认使用本机 `D:\STEAM` 安装路径；其他机器可向构建、打包和测试脚本传入 `GameRoot`（游戏根目录）及 `Workshop`。
+双版本构建需要 .NET 10 SDK、分别保留的游戏依赖与对应版本 Harmony。脚本优先使用 `.tools/dotnet` 中的 SDK，也可使用系统 SDK。忽略的 `.build.local.json` 可配置 `gameRoots` 下的 `1.6`、`1.7` 路径；也可直接传参。构建缓存和程序集按版本隔离。
 
 ```powershell
 ./Tools/Build.ps1
 ./Tools/Verify-Package.ps1
 ./Tools/Package.ps1
-# 覆盖本机依赖位置：
-./Tools/Build.ps1 -GameRoot 'X:/RimWorld' -Workshop 'X:/steamapps/workshop/content/294100'
-# 游戏行为测试，按需显式运行：
-./Tools/Test-Game.ps1
+# 双版本依赖位置：
+./Tools/Build.ps1 -GameRoot16 'X:/RimWorld-1.6' -GameRoot17 'X:/RimWorld-1.7'
+# 单版本：
+./Tools/Build.ps1 -GameVersion 1.7 -GameRoot 'X:/RimWorld-1.7'
+# 诊断回归与运行中游戏保护，可分别指定 1.6、1.7：
+./Tools/Test-DataFoundation.ps1 -GameVersion 1.7 -Mode regression
+./Tools/Test-DataFoundation.ps1 -GameVersion 1.7 -Mode live-guard
+# 真正启动游戏，生成测试殖民地并执行两轮保存/读档：
+./Tools/Test-GameArchive.ps1 -GameVersion 1.6
+./Tools/Test-GameArchive.ps1 -GameVersion 1.7
+# 觉醒、真实救援/契约/移动任务、三兽轮换与战斗，并进行两轮存读：
+./Tools/Test-GameArchive.ps1 -GameVersion 1.6 -TestMode Gameplay
+./Tools/Test-GameArchive.ps1 -GameVersion 1.7 -TestMode Gameplay
 ```
 
-测试在项目的 `TestRuns/` 下建立独立设置与存档，启动独立的隐藏游戏进程，不更改正常游戏启用列表。脚本会将本项目运行包覆盖安装到所选游戏的 `Mods/RimModSummoner`。日志出现 `[SummonerTest] ALL TESTS PASSED` 表示集成测试完成。测试主动在独立存档中造成死亡；不要对正式存档添加 `-summoner-selftest` 参数。
+打包产物 `Dist/RimModSummoner-v0.3.0-dev-1.6-1.7.zip` 是入门流程开发包。共用资源放在根目录，`LoadFolders.xml` 只加载当前版本的 `1.6/Assemblies` 或 `1.7/Assemblies`；包内不附带游戏、Harmony 或测试程序集。测试结果见[三兽与契约结果](docs/tasks/03_DRUID_CONTRACT_RESULT.md)。
 
-`Source/obj`、`Source/bin`、`Mod/Assemblies`、`Dist`、`TestRuns` 不纳入 Git；DLL 由源码重新构建。灵狼贴图重建默认读取项目内 `ArtSource/SpiritWolf/SpiritWolf_SourceSheet.png`。
-
-## 当前边界
-
-界面主要为简体中文；English仅提供状态页键名回退。灵狼已使用原创的深色狼身、翠绿色发光灵纹四向贴图；巨牙形态本轮仍共用该外观，通过名称、契约页与健康状态区分。未进行多人同步、Combat Extended或用户完整整合包兼容认证。跨地图呼唤明确不支持。所有数值是可调的第一版初值。
-
-成年灵狼的物理体型为1.0、绘制尺寸为2.2；原版森林狼分别约为0.85和1.95，因此灵狼在画面和体型判定上都略大。CE弹道防护尚未写死：当前通用承伤-15%会保留，CE专用锐器装甲/灵体偏转等待实战数值确定后再加。
-
-v0.1.2 不包含三专精、召唤师熟练度、第二契约位、灵魂负荷、多分支进化、融合、敌对召唤师。大型版本的后续范围以 `docs/ROADMAP.md` 和其中引用的需求稿为准。
-
-API适配参考本机已安装依赖及上游源码：https://github.com/Vanilla-Expanded/VanillaPsycastsExpanded 。发行包不包含这些依赖或第三方美术。
+`Tests/ScribeHost` 保存诊断回归宿主，原 `full` 模式缺少完整游戏初始化，仍应返回失败；实际存读验收使用 `Tests/GameSupport`。游戏验证工具需要 PowerShell 7.4+，默认在 `C:\SummonerTests` 创建完整副本、独立 Mods/配置/存档与临时缓存，只启用 Core、Harmony、本 Mod 和测试模块。禁止放入系统临时目录，不使用指向原资源的目录链接。不会操作正式殖民档。证据摘要见 `docs/Evidence/dual-version`。

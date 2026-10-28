@@ -1,0 +1,6 @@
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TraderKindDef[defName="Orbital_Exotic" or defName="Caravan_Outlander_Exotic"]/stockGenerators</xpath>
+    <value><li Class="StockGenerator_SingleDef"><thingDef>RMS_AwakeningSeed</thingDef><countRange>1~2</countRange></li></value>
+  </Operation>
+</Patch>

@@ -1,0 +1,8 @@
+<Project>
+  <PropertyGroup>
+    <RimWorldVersion Condition="'$(RimWorldVersion)' == ''">1.6</RimWorldVersion>
+    <BaseIntermediateOutputPath>obj/$(RimWorldVersion)/</BaseIntermediateOutputPath>
+    <BaseOutputPath>bin/$(RimWorldVersion)/</BaseOutputPath>
+    <DefaultItemExcludes>$(DefaultItemExcludes);obj/**;bin/**</DefaultItemExcludes>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework Condition="'$(RimWorldVersion)' == '1.6'">net48</TargetFramework>
+    <TargetFramework Condition="'$(RimWorldVersion)' == '1.7'">net10.0</TargetFramework>
+    <DefineConstants Condition="'$(RimWorldVersion)' == '1.7'">$(DefineConstants);RIMWORLD_1_7</DefineConstants>
+    <AssemblyName>RimModSummonerTests</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <HarmonyDll Condition="'$(HarmonyDll)' == ''">$(Workshop)/2009463077/$(RimWorldVersion)/Assemblies/0Harmony.dll</HarmonyDll>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../Source/RimModSummoner.csproj"><Private>false</Private></ProjectReference>
+    <Reference Include="Assembly-CSharp"><HintPath>$(GameDir)/Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(HarmonyDll)</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule" Condition="'$(RimWorldVersion)' == '1.6'"><HintPath>$(GameDir)/UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityStubs" Condition="'$(RimWorldVersion)' == '1.7'"><HintPath>$(GameDir)/UnityStubs.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

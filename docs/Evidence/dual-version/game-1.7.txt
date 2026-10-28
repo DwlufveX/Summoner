@@ -1,0 +1,48 @@
+12:29:54  INFO [SummonerArchiveTest] game=1.7.4977 temporaryCache=C:\SummonerTests\game-1.7-20261014-122928-375\TempCache\
+12:29:54  INFO [SummonerArchiveTest] PASS real map pawn binds: 
+12:29:54  INFO [SummonerArchiveTest] PASS real detached pawn enters holder: 
+12:29:54  INFO [SummonerArchiveTest] PASS foreign keys available immediately
+12:29:54  INFO [SummonerArchiveTest] PASS 
+12:29:54  INFO [SummonerArchiveTest] PASS 
+12:29:54  INFO [SummonerArchiveTest] PASS 
+12:29:54  INFO [SummonerArchiveTest] PASS 
+12:29:54  INFO [SummonerArchiveTest] PASS 
+12:29:54  INFO [SummonerArchiveTest] PASS 
+12:29:54  INFO [SummonerArchiveTest] PASS 
+12:29:54  INFO [SummonerArchiveTest] PASS 
+12:29:54  INFO [SummonerArchiveTest] PASS 
+12:29:54  INFO [SummonerArchiveTest] PASS nested inventory owned by realm pawn
+12:29:54  INFO [SummonerArchiveTest] PASS data consistency before save
+12:29:55  INFO [SummonerArchiveTest] PASS real rws file exists
+12:29:55  INFO [SummonerArchiveTest] SAVE COMPLETE round=1
+12:29:57  INFO [SummonerArchiveTest] PASS master reference and ID restored
+12:29:57  INFO [SummonerArchiveTest] PASS map pawn reference and ID restored
+12:29:57  INFO [SummonerArchiveTest] PASS realm pawn deep ownership and ID restored
+12:29:57  INFO [SummonerArchiveTest] PASS component foreign keys restored
+12:29:57  INFO [SummonerArchiveTest] PASS growth and cooldowns restored
+12:29:57  INFO [SummonerArchiveTest] PASS all growth collections restored
+12:29:57  INFO [SummonerArchiveTest] PASS roster and proficiency restored
+12:29:57  INFO [SummonerArchiveTest] PASS reward candidates restored
+12:29:57  INFO [SummonerArchiveTest] PASS injury body part severity and ID restored
+12:29:57  INFO [SummonerArchiveTest] PASS age and needs restored
+12:29:57  INFO [SummonerArchiveTest] PASS nested inventory restored
+12:29:57  INFO [SummonerArchiveTest] PASS recursive holder graph includes nested inventory
+12:29:57  INFO [SummonerArchiveTest] PASS loaded data consistent
+12:29:57  INFO [SummonerArchiveTest] PASS ID allocation after load
+12:29:57  INFO [SummonerArchiveTest] PASS real rws file exists
+12:29:57  INFO [SummonerArchiveTest] SAVE COMPLETE round=2
+12:29:59  INFO [SummonerArchiveTest] PASS master reference and ID restored
+12:29:59  INFO [SummonerArchiveTest] PASS map pawn reference and ID restored
+12:29:59  INFO [SummonerArchiveTest] PASS realm pawn deep ownership and ID restored
+12:29:59  INFO [SummonerArchiveTest] PASS component foreign keys restored
+12:29:59  INFO [SummonerArchiveTest] PASS growth and cooldowns restored
+12:29:59  INFO [SummonerArchiveTest] PASS all growth collections restored
+12:29:59  INFO [SummonerArchiveTest] PASS roster and proficiency restored
+12:29:59  INFO [SummonerArchiveTest] PASS reward candidates restored
+12:29:59  INFO [SummonerArchiveTest] PASS injury body part severity and ID restored
+12:29:59  INFO [SummonerArchiveTest] PASS age and needs restored
+12:29:59  INFO [SummonerArchiveTest] PASS nested inventory restored
+12:29:59  INFO [SummonerArchiveTest] PASS recursive holder graph includes nested inventory
+12:29:59  INFO [SummonerArchiveTest] PASS loaded data consistent
+12:29:59  INFO [SummonerArchiveTest] PASS second load complete without duplicates
+12:29:59  INFO [SummonerArchiveTest] ALL TESTS PASSED

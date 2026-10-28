@@ -1,0 +1,1 @@
+PASS: awakening, real rescue/contract/move jobs, three beasts, rotation, ranged combat, constraints and two save/load rounds; zero captured errors.

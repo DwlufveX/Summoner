@@ -1,0 +1,55 @@
+<Defs>
+  <ThingDef Name="RMS_SpiritAnimalBase" ParentName="AnimalThingBase" Abstract="True">
+    <statBases><MarketValue>600</MarketValue><Wildness>0</Wildness><FilthRate>0.3</FilthRate><ComfyTemperatureMin>-30</ComfyTemperatureMin><ComfyTemperatureMax>45</ComfyTemperatureMax></statBases>
+    <race>
+      <thinkTreeMain>RMS_SummonerAnimal</thinkTreeMain><trainability>Advanced</trainability><hasGenders>false</hasGenders>
+      <baseHungerRate>0.22</baseHungerRate><foodType>OmnivoreAnimal</foodType><lifeExpectancy>100</lifeExpectancy>
+      <nameOnTameChance>0</nameOnTameChance><manhunterOnDamageChance>0</manhunterOnDamageChance>
+      <lifeStageAges><li><def>AnimalAdult</def><minAge>0</minAge></li></lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn><soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding><soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <comps><li Class="RimMod.Summoner.CompProperties_SummonerBeastLink" /></comps>
+    <modExtensions><li Class="RimMod.Summoner.SummonerBeastDef" /></modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="RMS_SpiritAnimalBase">
+    <defName>RMS_SpiritWolf</defName><label>spirit wolf</label><description>A druid spirit beast suited to mobile melee combat. It needs food, sleep and medical care.</description>
+    <statBases><MoveSpeed>5.75</MoveSpeed><ArmorRating_Sharp>0.30</ArmorRating_Sharp><ArmorRating_Blunt>0.40</ArmorRating_Blunt></statBases>
+    <race><body>QuadrupedAnimalWithPawsAndTail</body><baseBodySize>0.85</baseBodySize><baseHealthScale>1.38</baseHealthScale><leatherDef>Leather_Wolf</leatherDef></race>
+    <tools><li><label>bite</label><capacities><li>Bite</li></capacities><power>23</power><cooldownTime>1.6</cooldownTime><linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup></li></tools>
+  </ThingDef>
+  <ThingDef ParentName="RMS_SpiritAnimalBase">
+    <defName>RMS_SpiritBear</defName><label>spirit bear</label><description>A sturdy druid spirit beast suited to holding the front line. It needs food, sleep and medical care.</description>
+    <statBases><MoveSpeed>4.83</MoveSpeed><ArmorRating_Sharp>0.35</ArmorRating_Sharp><ArmorRating_Blunt>0.50</ArmorRating_Blunt></statBases>
+    <race><body>QuadrupedAnimalWithPawsAndTail</body><baseBodySize>2.15</baseBodySize><baseHealthScale>2.07</baseHealthScale><leatherDef>Leather_Bear</leatherDef></race>
+    <tools><li><label>claw</label><capacities><li>Scratch</li></capacities><power>20.7</power><cooldownTime>2</cooldownTime><linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup></li></tools>
+  </ThingDef>
+  <ThingDef ParentName="RMS_SpiritAnimalBase">
+    <defName>RMS_SpiritHawk</defName><label>spirit hawk</label><description>A druid spirit beast that launches cutting wind blades at range. It needs food, sleep and medical care.</description>
+    <statBases><MoveSpeed>5.52</MoveSpeed><ArmorRating_Sharp>0.20</ArmorRating_Sharp><ArmorRating_Blunt>0.25</ArmorRating_Blunt><ShootingAccuracyPawn>0.85</ShootingAccuracyPawn></statBases>
+    <race><body>Bird</body><baseBodySize>0.7</baseBodySize><baseHealthScale>1.035</baseHealthScale><leatherDef>Leather_Bird</leatherDef></race>
+    <tools><li><label>claw</label><capacities><li>Scratch</li></capacities><power>9.2</power><cooldownTime>2.2</cooldownTime></li></tools>
+    <verbs><li><verbClass>Verb_Shoot</verbClass><hasStandardCommand>true</hasStandardCommand><defaultProjectile>RMS_WindBlade</defaultProjectile><warmupTime>0.6</warmupTime><range>20</range><minRange>1</minRange><ticksBetweenBurstShots>60</ticksBetweenBurstShots><burstShotCount>1</burstShotCount><defaultCooldownTime>2.2</defaultCooldownTime></li></verbs>
+    <modExtensions Inherit="False"><li Class="RimMod.Summoner.SummonerBeastDef"><ranged>true</ranged></li></modExtensions>
+  </ThingDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>RMS_SpiritWolf</defName><label>spirit wolf</label><race>RMS_SpiritWolf</race><combatPower>100</combatPower><ecoSystemWeight>0</ecoSystemWeight>
+    <lifeStages><li><bodyGraphicData><texPath>Things/Pawn/Animal/SpiritWolf/SpiritWolf</texPath><graphicClass>Graphic_Multi</graphicClass><drawSize>1.95</drawSize></bodyGraphicData></li></lifeStages>
+  </PawnKindDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>RMS_SpiritBear</defName><label>spirit bear</label><race>RMS_SpiritBear</race><combatPower>150</combatPower><ecoSystemWeight>0</ecoSystemWeight>
+    <lifeStages><li><bodyGraphicData><texPath>Things/Pawn/Summoner/SpiritBear</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>2.4</drawSize></bodyGraphicData></li></lifeStages>
+  </PawnKindDef>
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>RMS_SpiritHawk</defName><label>spirit hawk</label><race>RMS_SpiritHawk</race><combatPower>110</combatPower><ecoSystemWeight>0</ecoSystemWeight>
+    <lifeStages><li><bodyGraphicData><texPath>Things/Pawn/Summoner/SpiritHawk</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>1.6</drawSize></bodyGraphicData></li></lifeStages>
+  </PawnKindDef>
+  <ThingDef ParentName="BaseBullet"><defName>RMS_WindBlade</defName><label>wind blade</label><graphicData><texPath>Things/Projectile/Bullet_Small</texPath><graphicClass>Graphic_Single</graphicClass></graphicData><projectile><damageDef>Cut</damageDef><damageAmountBase>20</damageAmountBase><speed>55</speed></projectile></ThingDef>
+  <ThinkTreeDef><defName>RMS_SummonerAnimal</defName><thinkRoot Class="ThinkNode_Priority"><subNodes>
+    <li Class="ThinkNode_Subtree"><treeDef>Downed</treeDef></li>
+    <li Class="ThinkNode_Subtree"><treeDef>BurningResponse</treeDef></li>
+    <li Class="ThinkNode_Subtree"><treeDef>MentalStateCritical</treeDef></li>
+    <li Class="ThinkNode_QueuedJob" />
+    <li Class="RimMod.Summoner.JobGiver_SummonerDrafted"/>
+    <li Class="ThinkNode_Subtree"><treeDef>Animal</treeDef></li>
+  </subNodes></thinkRoot></ThinkTreeDef>
+</Defs>

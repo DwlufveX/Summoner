@@ -1,0 +1,52 @@
+[SummonerGameplayTest] PASS unbound beast contract button disabled before any summoner awakens
+[SummonerGameplayTest] game=1.6.4871 cache=C:/SummonerTests/game-1.6-20261014-144930-634/TempCache/Ludeon Studios/RimWorld by Ludeon Studios
+[SummonerGameplayTest] PASS awakening item usable by colonist
+[SummonerGameplayTest] PASS awakening consumes one seed and grants initial capacities
+[SummonerGameplayTest] PASS duplicate awakening rejected
+[SummonerGameplayTest] PASS master roster gizmo available
+[SummonerGameplayTest] PASS scheduled first rescue contains wolf
+[SummonerGameplayTest] PASS actual open-cage job releases rescued beast
+[SummonerGameplayTest] PASS actual contract job assigns primary and locks bloodline
+[SummonerGameplayTest] PASS summon primary: 
+[SummonerGameplayTest] PASS beast control and needs without colonist reclassification
+[SummonerGameplayTest] PASS beast draft gizmo available
+[SummonerGameplayTest] PASS movement target available
+[SummonerGameplayTest] PASS actual drafted move job completes without auto-undraft
+[SummonerGameplayTest] PASS contract RMS_SpiritBear: 
+[SummonerGameplayTest] PASS contract RMS_SpiritHawk: 
+[SummonerGameplayTest] PASS reserve cannot deploy directly
+[SummonerGameplayTest] PASS sleeping switch rejected before recalling old beast
+[SummonerGameplayTest] PASS oversized replacement rejected without losing old field pawn
+[SummonerGameplayTest] PASS other summoner cannot recall owned beast
+[SummonerGameplayTest] PASS switch to bear: 
+[SummonerGameplayTest] PASS rotation transfers one field capacity
+[SummonerGameplayTest] PASS switch to hawk: 
+[SummonerGameplayTest] PASS second rotation keeps single primary on field
+[SummonerGameplayTest] PASS ranged target position available
+[SummonerGameplayTest] PASS hawk wind projectile damages real target
+[SummonerGameplayTest] PASS contract RMS_SpiritWolf: 
+[SummonerGameplayTest] PASS fifth contract rejected without removing pawn or creating record
+[SummonerGameplayTest] PASS gameplay data consistent before save
+[SummonerGameplayTest] PASS unopened rescue fixture created for save validation
+[SummonerGameplayTest] SAVE COMPLETE round=1
+[SummonerGameplayTest] PASS awakening and rescue progression restored
+[SummonerGameplayTest] PASS primary and three reserves restored
+[SummonerGameplayTest] PASS field hawk identity and control restored
+[SummonerGameplayTest] PASS realm wolf and bear identities restored
+[SummonerGameplayTest] PASS realm injury and inventory restored
+[SummonerGameplayTest] PASS loaded gameplay archive consistent
+[SummonerGameplayTest] PASS unopened cage and captive deep ownership restored
+[SummonerGameplayTest] PASS restored rescue cage opens without duplicating captive
+[SummonerGameplayTest] PASS recall after load: 
+[SummonerGameplayTest] PASS switch and summon after load: 
+[SummonerGameplayTest] PASS restore hawk rotation: 
+[SummonerGameplayTest] SAVE COMPLETE round=2
+[SummonerGameplayTest] PASS awakening and rescue progression restored
+[SummonerGameplayTest] PASS primary and three reserves restored
+[SummonerGameplayTest] PASS field hawk identity and control restored
+[SummonerGameplayTest] PASS realm wolf and bear identities restored
+[SummonerGameplayTest] PASS realm injury and inventory restored
+[SummonerGameplayTest] PASS loaded gameplay archive consistent
+[SummonerGameplayTest] PASS second load without duplicate beasts or field overflow
+[SummonerGameplayTest] PASS second load preserves released unbound captive
+[SummonerGameplayTest] ALL TESTS PASSED

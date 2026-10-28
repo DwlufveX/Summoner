@@ -1,0 +1,53 @@
+14:49:43  INFO [SummonerGameplayTest] PASS unbound beast contract button disabled before any summoner awakens
+14:49:43  INFO [SummonerGameplayTest] game=1.7.4977 cache=C:\SummonerTests\game-1.7-20261014-144920-306\TempCache\
+14:49:43  INFO [SummonerGameplayTest] PASS awakening item usable by colonist
+14:49:43  INFO [SummonerGameplayTest] PASS awakening consumes one seed and grants initial capacities
+14:49:43  INFO [SummonerGameplayTest] PASS duplicate awakening rejected
+14:49:43  INFO [SummonerGameplayTest] PASS master roster gizmo available
+14:50:00  INFO [SummonerGameplayTest] PASS scheduled first rescue contains wolf
+14:50:08  INFO [SummonerGameplayTest] PASS actual open-cage job releases rescued beast
+14:50:10  INFO [SummonerGameplayTest] PASS actual contract job assigns primary and locks bloodline
+14:50:10  INFO [SummonerGameplayTest] PASS summon primary: 
+14:50:10  INFO [SummonerGameplayTest] PASS beast control and needs without colonist reclassification
+14:50:10  INFO [SummonerGameplayTest] PASS beast draft gizmo available
+14:50:10  INFO [SummonerGameplayTest] PASS movement target available
+14:50:10  INFO [SummonerGameplayTest] MOVE position=(121, 0, 103) target=(123, 0, 100) job=Goto (Job_179) A = (123, 0, 100) Giver = ThinkNode_QueuedJob [workGiverDef: null] drafted=True
+14:50:11  INFO [SummonerGameplayTest] PASS actual drafted move job completes without auto-undraft
+14:50:11  INFO [SummonerGameplayTest] PASS contract RMS_SpiritBear: 
+14:50:11  INFO [SummonerGameplayTest] PASS contract RMS_SpiritHawk: 
+14:50:11  INFO [SummonerGameplayTest] PASS reserve cannot deploy directly
+14:50:11  INFO [SummonerGameplayTest] PASS sleeping switch rejected before recalling old beast
+14:50:11  INFO [SummonerGameplayTest] PASS oversized replacement rejected without losing old field pawn
+14:50:11  INFO [SummonerGameplayTest] PASS other summoner cannot recall owned beast
+14:50:11  INFO [SummonerGameplayTest] PASS switch to bear: 
+14:50:11  INFO [SummonerGameplayTest] PASS rotation transfers one field capacity
+14:50:11  INFO [SummonerGameplayTest] PASS switch to hawk: 
+14:50:11  INFO [SummonerGameplayTest] PASS second rotation keeps single primary on field
+14:50:11  INFO [SummonerGameplayTest] PASS ranged target position available
+14:50:12  INFO [SummonerGameplayTest] PASS hawk wind projectile damages real target
+14:50:12  INFO [SummonerGameplayTest] PASS contract RMS_SpiritWolf: 
+14:50:12  INFO [SummonerGameplayTest] PASS fifth contract rejected without removing pawn or creating record
+14:50:12  INFO [SummonerGameplayTest] PASS gameplay data consistent before save
+14:50:12  INFO [SummonerGameplayTest] PASS unopened rescue fixture created for save validation
+14:50:12  INFO [SummonerGameplayTest] SAVE COMPLETE round=1
+14:50:14  INFO [SummonerGameplayTest] PASS awakening and rescue progression restored
+14:50:14  INFO [SummonerGameplayTest] PASS primary and three reserves restored
+14:50:14  INFO [SummonerGameplayTest] PASS field hawk identity and control restored
+14:50:14  INFO [SummonerGameplayTest] PASS realm wolf and bear identities restored
+14:50:14  INFO [SummonerGameplayTest] PASS realm injury and inventory restored
+14:50:14  INFO [SummonerGameplayTest] PASS loaded gameplay archive consistent
+14:50:14  INFO [SummonerGameplayTest] PASS unopened cage and captive deep ownership restored
+14:50:14  INFO [SummonerGameplayTest] PASS restored rescue cage opens without duplicating captive
+14:50:14  INFO [SummonerGameplayTest] PASS recall after load: 
+14:50:14  INFO [SummonerGameplayTest] PASS switch and summon after load: 
+14:50:14  INFO [SummonerGameplayTest] PASS restore hawk rotation: 
+14:50:14  INFO [SummonerGameplayTest] SAVE COMPLETE round=2
+14:50:15  INFO [SummonerGameplayTest] PASS awakening and rescue progression restored
+14:50:15  INFO [SummonerGameplayTest] PASS primary and three reserves restored
+14:50:15  INFO [SummonerGameplayTest] PASS field hawk identity and control restored
+14:50:15  INFO [SummonerGameplayTest] PASS realm wolf and bear identities restored
+14:50:15  INFO [SummonerGameplayTest] PASS realm injury and inventory restored
+14:50:15  INFO [SummonerGameplayTest] PASS loaded gameplay archive consistent
+14:50:15  INFO [SummonerGameplayTest] PASS second load without duplicate beasts or field overflow
+14:50:15  INFO [SummonerGameplayTest] PASS second load preserves released unbound captive
+14:50:15  INFO [SummonerGameplayTest] ALL TESTS PASSED

@@ -1,0 +1,18 @@
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>RMS_AwakeningSeed</defName><label>summoner awakening seed</label><description>A seed of spiritual power. A colonist can absorb it to awaken as a summoner. Nearby trapped spirit beasts will then reveal themselves.</description>
+    <thingClass>ThingWithComps</thingClass><graphicData><texPath>UI/Summoner/Crystal</texPath><graphicClass>Graphic_Single</graphicClass></graphicData><stackLimit>10</stackLimit>
+    <statBases><MarketValue>500</MarketValue><Mass>0.1</Mass><MaxHitPoints>80</MaxHitPoints><Flammability>0.5</Flammability></statBases>
+    <thingCategories><li>ItemsMisc</li></thingCategories><tradeability>All</tradeability><techLevel>Spacer</techLevel>
+    <comps><li Class="CompProperties_Usable"><useJob>UseItem</useJob><useLabel>Absorb {0_label}</useLabel><showUseGizmo>true</showUseGizmo><useDuration>120</useDuration></li><li Class="CompProperties_UseEffect"><compClass>RimMod.Summoner.CompUseEffect_AwakenSummoner</compClass></li></comps>
+    <thingSetMakerTags><li>RewardStandardCore</li></thingSetMakerTags>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>RMS_SpiritCage</defName><label>spirit beast cage</label><description>An ancient seal holding a spirit beast. Send a colonist to open it, then select the released beast to form a contract with an awakened summoner.</description>
+    <thingClass>RimMod.Summoner.Building_SpiritCage</thingClass><graphicData><texPath>Things/Building/Ship/ShipCryptosleepCasket</texPath><graphicClass>Graphic_Multi</graphicClass><drawSize>(1,2)</drawSize></graphicData>
+    <size>(1,1)</size><passability>PassThroughOnly</passability><selectable>true</selectable><hasInteractionCell>true</hasInteractionCell><interactionCellOffset>(0,0,-1)</interactionCellOffset><containedPawnsSelectable>true</containedPawnsSelectable><rotatable>false</rotatable>
+    <statBases><MaxHitPoints>250</MaxHitPoints><Mass>40</Mass><Flammability>0</Flammability></statBases>
+    <building><isEdifice>true</isEdifice><claimable>true</claimable></building>
+  </ThingDef>
+  <JobDef><defName>RMS_ContractBeast</defName><driverClass>RimMod.Summoner.JobDriver_SummonerContract</driverClass><reportString>forming a spirit contract with TargetA.</reportString><casualInterruptible>false</casualInterruptible></JobDef>
+</Defs>

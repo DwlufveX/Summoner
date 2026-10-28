@@ -1,0 +1,48 @@
+[SummonerArchiveTest] game=1.6.4871 temporaryCache=C:/SummonerTests/game-1.6-20261014-122939-310/TempCache/Ludeon Studios/RimWorld by Ludeon Studios
+[SummonerArchiveTest] PASS real map pawn binds: 
+[SummonerArchiveTest] PASS real detached pawn enters holder: 
+[SummonerArchiveTest] PASS foreign keys available immediately
+[SummonerArchiveTest] PASS 
+[SummonerArchiveTest] PASS 
+[SummonerArchiveTest] PASS 
+[SummonerArchiveTest] PASS 
+[SummonerArchiveTest] PASS 
+[SummonerArchiveTest] PASS 
+[SummonerArchiveTest] PASS 
+[SummonerArchiveTest] PASS 
+[SummonerArchiveTest] PASS 
+[SummonerArchiveTest] PASS nested inventory owned by realm pawn
+[SummonerArchiveTest] PASS data consistency before save
+[SummonerArchiveTest] PASS real rws file exists
+[SummonerArchiveTest] SAVE COMPLETE round=1
+[SummonerArchiveTest] PASS master reference and ID restored
+[SummonerArchiveTest] PASS map pawn reference and ID restored
+[SummonerArchiveTest] PASS realm pawn deep ownership and ID restored
+[SummonerArchiveTest] PASS component foreign keys restored
+[SummonerArchiveTest] PASS growth and cooldowns restored
+[SummonerArchiveTest] PASS all growth collections restored
+[SummonerArchiveTest] PASS roster and proficiency restored
+[SummonerArchiveTest] PASS reward candidates restored
+[SummonerArchiveTest] PASS injury body part severity and ID restored
+[SummonerArchiveTest] PASS age and needs restored
+[SummonerArchiveTest] PASS nested inventory restored
+[SummonerArchiveTest] PASS recursive holder graph includes nested inventory
+[SummonerArchiveTest] PASS loaded data consistent
+[SummonerArchiveTest] PASS ID allocation after load
+[SummonerArchiveTest] PASS real rws file exists
+[SummonerArchiveTest] SAVE COMPLETE round=2
+[SummonerArchiveTest] PASS master reference and ID restored
+[SummonerArchiveTest] PASS map pawn reference and ID restored
+[SummonerArchiveTest] PASS realm pawn deep ownership and ID restored
+[SummonerArchiveTest] PASS component foreign keys restored
+[SummonerArchiveTest] PASS growth and cooldowns restored
+[SummonerArchiveTest] PASS all growth collections restored
+[SummonerArchiveTest] PASS roster and proficiency restored
+[SummonerArchiveTest] PASS reward candidates restored
+[SummonerArchiveTest] PASS injury body part severity and ID restored
+[SummonerArchiveTest] PASS age and needs restored
+[SummonerArchiveTest] PASS nested inventory restored
+[SummonerArchiveTest] PASS recursive holder graph includes nested inventory
+[SummonerArchiveTest] PASS loaded data consistent
+[SummonerArchiveTest] PASS second load complete without duplicates
+[SummonerArchiveTest] ALL TESTS PASSED

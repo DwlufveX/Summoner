@@ -1,0 +1,32 @@
+<LanguageData>
+  <RMS_MasterUnavailable>The summoner must be a conscious, controllable colonist on this map.</RMS_MasterUnavailable>
+  <RMS_AlreadyAwakened>This colonist is already a summoner.</RMS_AlreadyAwakened>
+  <RMS_CannotContract>The spirit beast must be rescued, alive, standing and unbound.</RMS_CannotContract>
+  <RMS_TooFarToContract>Approach the spirit beast to form a contract.</RMS_TooFarToContract>
+  <RMS_RosterFull>No compatible roster space remains. Each slot holds one primary and three reserves.</RMS_RosterFull>
+  <RMS_BeastUnavailable>This spirit beast cannot enter the field now.</RMS_BeastUnavailable>
+  <RMS_Sleeping>Sleeping: the deployment cooldown has not ended.</RMS_Sleeping>
+  <RMS_PrimaryOnly>Only the primary beast of each contract slot may deploy.</RMS_PrimaryOnly>
+  <RMS_AlreadyOnField>This beast is already on the field.</RMS_AlreadyOnField>
+  <RMS_CapacityFull>Insufficient field capacity.</RMS_CapacityFull>
+  <RMS_NoSpawnCell>No deployment cell is available near the master.</RMS_NoSpawnCell>
+  <RMS_CannotRecall>Only a living friendly contracted beast on the same map can be recalled.</RMS_CannotRecall>
+  <RMS_Awakened>{0} has awakened as a summoner. A spirit beast's call will soon be revealed.</RMS_Awakened>
+  <RMS_RescueTitle>Spirit beast rescue</RMS_RescueTitle>
+  <RMS_RescueText>{0} senses a {1} sealed in an ancient cage nearby. Send a colonist to open it, then select the rescued beast and order a summoner to form a contract.</RMS_RescueText>
+  <RMS_BeastRescued>{0} has been rescued. Select it and choose Form contract to send a summoner.</RMS_BeastRescued>
+  <RMS_OpenCage>Rescue spirit beast</RMS_OpenCage><RMS_OpenCageDesc>Choose a colonist to open the cage.</RMS_OpenCageDesc>
+  <RMS_Contract>Form contract</RMS_Contract><RMS_ContractDesc>Send an awakened summoner to form a contract. The beast enters its master's soul realm.</RMS_ContractDesc>
+  <RMS_Contracted>Contract formed. Select the summoner and open the roster to call the primary beast.</RMS_Contracted>
+  <RMS_Move>Move</RMS_Move><RMS_MoveDesc>Order the drafted beast to move.</RMS_MoveDesc>
+  <RMS_Attack>Attack</RMS_Attack><RMS_AttackDesc>Order the drafted beast to attack a target.</RMS_AttackDesc>
+  <RMS_Recall>Recall spirit</RMS_Recall><RMS_RecallDesc>Return the beast to the realm, preserving injuries, needs and inventory.</RMS_RecallDesc>
+  <RMS_Summon>Call spirit</RMS_Summon>
+  <RMS_Roster>Contract roster</RMS_Roster><RMS_RosterDesc>Manage primary and reserve beasts, call, recall and switch.</RMS_RosterDesc>
+  <RMS_RosterTitle>{0}'s contract roster</RMS_RosterTitle><RMS_RosterCapacity>Field capacity: {0}/{1}   Contract slots: {2}/{3}</RMS_RosterCapacity>
+  <RMS_RosterHint>One primary and up to three reserves per slot. Switching recalls the old beast before deploying the new one.</RMS_RosterHint>
+  <RMS_SlotTitle>Contract slot {0} · {1}</RMS_SlotTitle><RMS_EmptySlot>Unbound bloodline</RMS_EmptySlot><RMS_Druid>Druid</RMS_Druid>
+  <RMS_NoPrimary>No primary beast. Rescue a beast and form a contract.</RMS_NoPrimary>
+  <RMS_Dead>Dead</RMS_Dead><RMS_OnField>On field</RMS_OnField><RMS_InRealm>Realm standby</RMS_InRealm>
+  <RMS_Primary>Primary</RMS_Primary><RMS_Reserve>Reserve</RMS_Reserve><RMS_BeastState>Tier {0} · Lv{1} · {2}</RMS_BeastState><RMS_MakePrimary>Make primary</RMS_MakePrimary>
+</LanguageData>

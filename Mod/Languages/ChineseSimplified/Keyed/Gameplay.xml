@@ -1,0 +1,46 @@
+<LanguageData>
+  <RMS_MasterUnavailable>主人必须是当前地图上清醒、可操控的殖民者召唤师。</RMS_MasterUnavailable>
+  <RMS_AlreadyAwakened>这名殖民者已经觉醒为召唤师。</RMS_AlreadyAwakened>
+  <RMS_CannotContract>这只灵兽暂时不能缔约：必须已获救、存活、未倒地且尚无契约。</RMS_CannotContract>
+  <RMS_TooFarToContract>必须走到灵兽身边才能缔约。</RMS_TooFarToContract>
+  <RMS_RosterFull>没有同血脉的编队空位；每槽最多一主兽、三备用兽。</RMS_RosterFull>
+  <RMS_BeastUnavailable>这只灵兽目前无法上场。</RMS_BeastUnavailable>
+  <RMS_Sleeping>沉睡中，尚未结束禁上场时间。</RMS_Sleeping>
+  <RMS_PrimaryOnly>每个契约位只允许主兽上场，请先切换主兽。</RMS_PrimaryOnly>
+  <RMS_AlreadyOnField>这只灵兽已经在场上。</RMS_AlreadyOnField>
+  <RMS_CapacityFull>上场容量不足。</RMS_CapacityFull>
+  <RMS_NoSpawnCell>主人附近没有可上场的位置。</RMS_NoSpawnCell>
+  <RMS_CannotRecall>只能召回同地图上的己方存活契约兽。</RMS_CannotRecall>
+  <RMS_Awakened>{0} 已觉醒为召唤师。附近灵兽的求援即将显现。</RMS_Awakened>
+  <RMS_RescueTitle>灵兽求援</RMS_RescueTitle>
+  <RMS_RescueText>{0} 感应到附近有一只 {1} 被古代牢笼封印。派殖民者打开牢笼，再选择获救灵兽，让召唤师前往缔约。</RMS_RescueText>
+  <RMS_BeastRescued>{0} 已获救。选择它并点击“缔结契约”即可安排召唤师前来。</RMS_BeastRescued>
+  <RMS_OpenCage>解救灵兽</RMS_OpenCage>
+  <RMS_OpenCageDesc>选择一名殖民者前往打开牢笼。</RMS_OpenCageDesc>
+  <RMS_Contract>缔结契约</RMS_Contract>
+  <RMS_ContractDesc>选择一名已觉醒的召唤师前来缔约。灵兽会进入该主人的灵境。</RMS_ContractDesc>
+  <RMS_Contracted>契约已建立。选择召唤师，打开契约编队呼唤主兽。</RMS_Contracted>
+  <RMS_Move>移动</RMS_Move>
+  <RMS_MoveDesc>命令征召中的灵兽移动到指定位置。</RMS_MoveDesc>
+  <RMS_Attack>攻击</RMS_Attack>
+  <RMS_AttackDesc>命令征召中的灵兽攻击指定目标。</RMS_AttackDesc>
+  <RMS_Recall>灵魂召回</RMS_Recall>
+  <RMS_RecallDesc>将场上灵兽送回灵境，保留伤势、需求与物品。</RMS_RecallDesc>
+  <RMS_Summon>灵魂呼唤</RMS_Summon>
+  <RMS_Roster>契约编队</RMS_Roster>
+  <RMS_RosterDesc>查看主兽与备用兽，呼唤、召回或切换主兽。</RMS_RosterDesc>
+  <RMS_RosterTitle>{0} 的契约编队</RMS_RosterTitle>
+  <RMS_RosterCapacity>上场容量：{0}/{1}　契约位：{2}/{3}</RMS_RosterCapacity>
+  <RMS_RosterHint>每槽一主兽、最多三备用兽。切换时先撤回旧兽，再派出新兽；召回保留实体状态。</RMS_RosterHint>
+  <RMS_SlotTitle>契约位 {0} · {1}</RMS_SlotTitle>
+  <RMS_EmptySlot>尚未绑定血脉</RMS_EmptySlot>
+  <RMS_Druid>德鲁伊</RMS_Druid>
+  <RMS_NoPrimary>尚无主兽，先完成灵兽救援与契约。</RMS_NoPrimary>
+  <RMS_Dead>已死亡</RMS_Dead>
+  <RMS_OnField>场上</RMS_OnField>
+  <RMS_InRealm>灵境待命</RMS_InRealm>
+  <RMS_Primary>主兽</RMS_Primary>
+  <RMS_Reserve>备用兽</RMS_Reserve>
+  <RMS_BeastState>{0} 阶 · Lv{1} · {2}</RMS_BeastState>
+  <RMS_MakePrimary>切换为主兽</RMS_MakePrimary>
+</LanguageData>

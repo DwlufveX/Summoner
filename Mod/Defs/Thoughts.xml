@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Defs>
-  <ThoughtDef><defName>RMS_CompanionThought</defName><workerClass>RimMod.Summoner.ThoughtWorker_Companion</workerClass><validWhileDespawned>true</validWhileDespawned><stages><li><label>灵魂伙伴</label><description>契约的另一端有一个生命陪伴着我。</description><baseMoodEffect>4</baseMoodEffect></li><li><label>伙伴受伤</label><description>我的契约兽受伤了，我能感到它的痛苦。</description><baseMoodEffect>-4</baseMoodEffect></li></stages></ThoughtDef>
-  <ThoughtDef><defName>RMS_TraumaThought</defName><workerClass>RimMod.Summoner.ThoughtWorker_Trauma</workerClass><validWhileDespawned>true</validWhileDespawned><stages><li><label>失去灵魂伙伴</label><description>它再也不会回应我的呼唤。</description><baseMoodEffect>-12</baseMoodEffect></li></stages></ThoughtDef>
-</Defs>
