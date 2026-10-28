@@ -4,7 +4,9 @@
 
 后续以生物包联动为主：由来源 Mod 提供生物、贴图、身体结构、声音和原生能力，Summoner 提供契约、编队、灵境、成长与复活。暂停独立扩绘召唤兽四向素材，优先完成生物接入。现有 0.3 三兽保留作原型、回归夹具及存档兼容，不据此继续扩建独立兽库。
 
-**当前只有内置三兽实现；本页列出的外部生物包均未完成适配或游戏验收。** 2026-10-28 本机 Workshop 未找到下列已确认 ID 对应的安装目录，因此没有真实 packageId、Def 映射或联动运行结果。基础 Mod 的 1.6/1.7 验收不能转用于第三方生物包。
+**当前只有内置三兽实现；本页列出的外部生物包均未完成适配或游戏验收。** 2026-10-28 已检查本机安装的 Alpha Animals，包括 About、双版本加载目录、候选生物定义与部分原始贴图；其余下表候选以作者页面核对为主，未读取实际安装文件。基础 Mod 的 1.6/1.7 验收不能转用于第三方生物包。
+
+本轮筛选建议：**Alpha Animals 先做双版本接入试点，Dark Ages 作为后续奇幻主题重点，龙类在普通生物与原生技能接入稳定后再做。** 这是基于当前文件、版本声明和项目控制方式的开发判断，不是兼容测试结论。
 
 ## 游戏怎样组合
 
@@ -20,15 +22,37 @@
 
 | 候选 | 官方页面信息 | 接入顺序与边界 |
 |---|---|---|
+| [Alpha Animals](https://steamcommunity.com/sharedfiles/filedetails/?id=1541721856) | 页面及本机 About 均声明 1.6/1.7，要求 Harmony 与 VEF；本机有分别加载的定义与程序集 | **优先做试点**。只选符合奇幻主题的少数物种，不把整个兽库、黑虫群与复杂特殊生物全部纳入契约 |
 | [Grimstone 原版](https://steamcommunity.com/sharedfiles/filedetails/?id=3309790710) / [1.6 fork](https://steamcommunity.com/sharedfiles/filedetails/?id=3535302121) | 原版标记 1.5；pookiemaru 的 fork 标记 1.5/1.6，页面列 Odyssey 为所需 DLC | 首批考察普通生物；原版与 fork 分开登记，不能因同名自动互换。1.7 尚未验收 |
-| [Dark Ages Beasts and Monsters](https://steamcommunity.com/sharedfiles/filedetails/?id=3472275628) | 标记 1.5/1.6，要求 Vanilla Expanded Framework | 首批候选；先选行为简单的个体，再处理石化等特殊能力。1.7 尚未验收 |
+| [Dark Ages Beasts and Monsters](https://steamcommunity.com/sharedfiles/filedetails/?id=3472275628) | 标记 1.5/1.6，要求 Vanilla Expanded Framework；作者定位中世纪奇幻、民间传说与原版风格 | **主题重点候选**。Taraal（作者称为枭熊）等适合作为魔兽方向；先检查普通个体，再处理巨魔、石化等特殊行为。1.7 尚未验收 |
+| [Anima Animals Combined (Continued)](https://steamcommunity.com/workshop/filedetails/?id=3190798512) | 标记到 1.6，要求 Royalty；合并两个 Anima Animals 包，包含稀有事件与特殊生物 | 自然/灵兽主题贴切，可作德鲁伊专属扩展；获取应保留稀有事件门槛。1.7 尚未验收 |
 | [Mooloh's Dnd Menagerie](https://steamcommunity.com/sharedfiles/filedetails/?id=2751849453) | 标记到 1.6，要求 VEF 和 Harmony；作者说明许多生物带特殊行为或能力 | 普通生物之后再接。不能让契约绕过原有构造、召唤或任务获取条件 |
 | [Dragons Descent](https://steamcommunity.com/workshop/filedetails/?id=2026992161) | 标记到 1.6，要求 Harmony 和 VEF；具有年龄阶段成长 | 放在普通生物联动之后；先处理年龄成长、吐息、冷却、征召等共存。页面评论中的 1.7 反馈不等于本项目验收 |
 | [Monster Hunter Legacy](https://steamcommunity.com/sharedfiles/filedetails/?id=2001260604) / [后继项目](https://steamcommunity.com/sharedfiles/filedetails/?id=2798478679) | Legacy 标记到 1.3，作者明确停止更新；后继项目页面标记到 1.5，要求 VEF | 暂不做双版本首发依赖，需找到适用版本并核对定义与能力 |
 | [Witcher Monster Hunt](https://steamcommunity.com/workshop/filedetails/?id=2008529522) | 页面标记到 1.4，包含怪物遭遇任务 | 暂不纳入双版本首批，不能用翻译包的版本标记代替原包支持 |
-| Forsakens Fauna、Creatures of Azeroth | 用户提供了镜像条目；尚未完成原项目、分支与版本对应关系核对 | 保留候选，不填写猜测的 Workshop ID、packageId 或 Def。正式接入前定位原作者维护的项目 |
+| Forsakens Fauna | 未核实独立旧包的可用双版本分支；本机 Alpha Animals 已有带 Forsaken 背景及 `FO_` 贴图路径的生物，如 Dark Vandal、Behemoth | 先评估现行 Alpha Animals 中实际存在的个体，不为旧包额外建立首批依赖；这不是对独立旧包版本或全部内容迁移情况的确认 |
+| Creatures of Azeroth | 找到[同名作者页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2912622730)，但尚未确认与用户提供的镜像条目对应，也未读取双版本定义 | 魔兽世界主题可作独立扩展；目前不优先于已能核对双版本文件的来源包 |
 
 核心包继续维护 1.6 与 1.7。某个联动只在 1.6 通过时，只声明该联动的 1.6 结果；不会为了名单齐全，把所有包都设成强制前置。来源包需要 VEF 或 DLC 时，这些依赖属于该联动组合。
+
+### Alpha Animals 首批物种建议
+
+本机来源：`D:/STEAM/steamapps/workshop/content/294100/1541721856`。已核对 `packageId=sarg.alphaanimals`，`LoadFolders.xml` 分别指向 `1.6`、`1.7`，两边存在相应程序集。下列 ThingDef 与 PawnKindDef 在两套 `Defs/ThingDefs_Races` 中均实际存在、同名；未据此声明游戏运行通过。作者源码见 [AlphaAnimals](https://github.com/juanosarg/AlphaAnimals)。
+
+| 次序 | 真实定义 | 适合承担的角色与验证点 |
+|---|---|---|
+| 先通一只 | `AA_MeadowAve` | 快速近战试点。彩羽、不能飞的大鸟，当前定义有产卵组件与坐骑相关扩展，攻击行为相对简单；先验证真实实体契约、进出灵境与存读。它不是空中单位；骑乘需另行适配对应坐骑 Mod |
+| 再接技能 | `AA_Nightling` | 夜行掠食魔兽，近战兼远程棘刺。实际定义带 `CompProperties_InitialAbility`，用于验证原生能力按钮、目标选择及冷却保存；不能直接套用内置鹰的普通远程命令 |
+| 后接重型 | `AA_AnimaColossus` | 背负植被的灵树巨兽，主题与承伤定位合适。定义还有产物、持续效果，且训练等级为 Intermediate；需要核对灵境内产出和时间推进，不能沿用全物种强制搬运训练。其种植灵树相关互动另需 Royalty |
+
+前两步通过后再决定是否纳入巨兽；首个联动不要求为了凑齐三个定位而同时接入三只。Dark Vandal 的饥饿挖掘、Arctic Lion 的特殊图形/隐匿相关内容、Behemoth 的再生与火焰能力留待独立案例验证。Alpha Animals 的整体内容偏外星生态，筛选时只开放符合本项目奇幻方向的物种。
+
+### 影响首发选择的限制
+
+- Dark Ages 的作者页面明确限制未经授权再利用其作品。联动保持来源包外部安装，仓库不复制其贴图、声音或代码；正式公开联动前应核对作者对具体适配方式的要求，不能沿用旧的 CC BY 4.0 说明。
+- Menagerie 的作者页面仍列出与 Dragons Descent 的远程动物框架冲突，涉及龙无法近战。该条是否已被新版本修复需要实测；不能分别能运行就推断二者与 Summoner 同时启用也能运行。
+- Dragons Descent 有原生年龄阶段成长；Menagerie 有石化、多种射线、构造与召唤获取。它们适合作为后续内容扩展，接入成本判断来自这些原生机制，而非单看贴图数量。
+- Monster Hunter Legacy 已停止更新，后继页面与 Witcher Monster Hunt 的标记也不足以支持当前双版本首发。继续保留美术与玩法参考价值，暂不放入首批依赖。
 
 ## 接入层需要做什么
 
@@ -63,7 +87,7 @@
 5. 额外验证来源包关闭、原包与 fork 不匹配、未打开牢笼保存、冷却中的实体召回，以及未契约的同种野生个体。
 6. 验收通过后才在仓库首页列为“已支持”；飞龙、石化、变形、坐骑与构装体按独立案例继续扩展。
 
-首批候选为 Grimstone 1.6 fork 的普通生物或 Dark Ages 的简单个体；版本与依赖确定后再固定首包。当前不发布没有真实 Def 和运行证据的空兼容补丁。
+按本轮筛选，建议首包使用 Alpha Animals，先以 Meadow Ave 打通控制与存档，再验证 Nightling 的原生技能。Dark Ages、Grimstone 和 Anima Animals 保留后续候选身份；当前不发布没有真实 Def 和运行证据的空兼容补丁。
 
 ## 现有原型怎样处理
 

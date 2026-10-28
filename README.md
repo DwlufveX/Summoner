@@ -6,7 +6,7 @@
 
 [游玩逻辑](docs/GAMEPLAY.md) · [实现进度](docs/STATUS.md) · [开发计划](docs/ROADMAP.md) · [一起开发](CONTRIBUTING.md)
 
-**后续方向：以奇幻生物 Mod 联动为主，暂停独立扩绘召唤兽。** 来源包提供生物、贴图和原生能力，我们负责契约、成长与灵境管理。Grimstone、Dark Ages、Menagerie、Dragons Descent 等列为候选，尚未完成适配；版本与接入边界见[联动方案](docs/INTEGRATIONS.md)。
+**后续方向：以奇幻生物 Mod 联动为主，暂停独立扩绘召唤兽。** 来源包提供生物、贴图和原生能力，我们负责契约、成长与灵境管理。经首轮筛选，建议先用 Alpha Animals 的少量物种验证双版本接入，Dark Ages 作为奇幻主题重点候选；其余候选、实际文件核对结果与接入边界见[联动方案](docs/INTEGRATIONS.md)。外部生物包尚未完成适配。
 
 ## 内置三兽原型预览
 
